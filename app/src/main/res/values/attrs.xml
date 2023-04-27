@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SeekBarSelector">
+        <attr name="name" format="string"/>
+        <attr name="valueColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RotateSelector">
+        <attr name="view1BackGroundColor" format="reference|color"/>
+        <attr name="view2BackGroundColor" format="reference|color"/>
+    </declare-styleable>
+
+</resources>

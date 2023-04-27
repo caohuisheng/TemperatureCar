@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rotate_text1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="系统参数"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        tools:ignore="RtlCompat" />
+
+    <com.example.View.SeekBarSelector
+        android:id="@+id/seekBarSelector1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:name="小车速度"
+        app:valueColor="@color/white"
+         />
+
+    <com.example.View.SeekBarSelector
+        android:id="@+id/seekBarSelector2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:name="报警温度阈值"
+        app:valueColor="@color/white"/>
+
+    <com.example.View.SeekBarSelector
+        android:id="@+id/seekBarSelector3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:name="音量"
+        app:valueColor="@color/white"/>
+
+</LinearLayout>
