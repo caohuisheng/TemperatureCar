@@ -3,6 +3,7 @@
     <declare-styleable name="SeekBarSelector">
         <attr name="name" format="string"/>
         <attr name="valueColor" format="color"/>
+        <attr name="nameColor" format="color"/>
     </declare-styleable>
 
     <declare-styleable name="RotateSelector">

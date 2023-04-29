@@ -4,17 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/rotate_text1"
+        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="系统参数"
         android:textAlignment="textStart"
-        android:textColor="@color/black"
+        android:textColor="@color/theme"
         android:textSize="18sp"
 
         tools:ignore="RtlCompat" />
@@ -25,7 +27,9 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:name="小车速度"
+        android:gravity="center"
         app:valueColor="@color/white"
+        app:nameColor="@color/gray"
          />
 
     <com.example.View.SeekBarSelector
@@ -34,6 +38,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:name="报警温度阈值"
+        app:nameColor="@color/gray"
         app:valueColor="@color/white"/>
 
     <com.example.View.SeekBarSelector
@@ -42,6 +47,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:name="音量"
+        app:nameColor="@color/gray"
         app:valueColor="@color/white"/>
 
 </LinearLayout>

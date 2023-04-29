@@ -55,6 +55,8 @@ class SeekBarSelector:FrameLayout {
         this.name.text = name
         val color = a.getColor(R.styleable.SeekBarSelector_valueColor,Color.BLACK)
         this.value.setTextColor(color)
+        val tc = a.getColor(R.styleable.SeekBarSelector_nameColor,Color.WHITE)
+        this.name.setTextColor(tc)
         a.recycle()
     }
 }

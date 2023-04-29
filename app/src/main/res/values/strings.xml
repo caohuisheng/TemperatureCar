@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TemperatureCar</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_mine">Mine</string>
+    <string name="title_setting">Sitting</string>
+    <string name="title_remote_control">RemoteControl</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

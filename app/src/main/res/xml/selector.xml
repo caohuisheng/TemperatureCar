@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name = "SelectorStyle">
+        <item name = "colorPrimary" > @color/purple_500 </item>
+        <item name = "android:textColorSecondary" >#cccccc</item>
+    </style>
+</Resource>

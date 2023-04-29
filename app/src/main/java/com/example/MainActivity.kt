@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         selector = findViewById(R.id.rotate_selector)
-        selector.setOnClickListener {view ->
+        selector.setOnClickListener { _ ->
             run {
                 selector.rotateView()
             }

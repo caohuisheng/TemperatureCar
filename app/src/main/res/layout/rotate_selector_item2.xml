@@ -8,7 +8,7 @@
     <TextView
         android:text="摄像头参数"
         android:textSize="18sp"
-        android:textColor="@color/black"
+        android:textColor="@color/theme"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -21,6 +21,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:name="摄像头旋转速度"
+        app:nameColor="@color/gray"
         app:valueColor="@color/white"
         />
 
@@ -29,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        app:nameColor="@color/gray"
         app:valueColor="@color/white"/>
 
     <com.example.View.SeekBarSelector
@@ -36,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        app:nameColor="@color/gray"
         app:valueColor="@color/white"/>
 
 </LinearLayout>
