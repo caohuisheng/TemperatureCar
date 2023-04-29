@@ -3,28 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/nav_home"
         android:name="com.example.ui.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_mine"
+        android:id="@+id/nav_person"
         android:name="com.example.ui.MineFragment"
         android:label="@string/title_mine"
         tools:layout="@layout/fragment_mine" />
 
     <fragment
-        android:id="@+id/navigation_sitting"
+        android:id="@+id/nav_setting"
         android:name="com.example.ui.SettingFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_setting" />
 
     <fragment
-        android:id="@+id/navigation_remote_control"
+        android:id="@+id/nav_lighting"
         android:name="com.example.ui.RemoteControlFragment"
         android:label="@string/title_remote_control"
         tools:layout="@layout/fragment_remote_control" />
