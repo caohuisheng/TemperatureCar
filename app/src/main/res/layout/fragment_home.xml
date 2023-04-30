@@ -35,4 +35,5 @@
         app:view1BackGroundColor="@drawable/guide_background"
         app:view2BackGroundColor="@drawable/guide_background" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
