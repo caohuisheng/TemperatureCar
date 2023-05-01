@@ -1,90 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:src="@drawable/bg_shexiang">
+    android:background="@drawable/bg_top"
+    android:padding="15dp">
 
-    <LinearLayout
-        android:id="@+id/layout_above"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="330dp"
-        android:background="@drawable/bg_top"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btn_return"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:background="@drawable/ret"
+            android:layout_centerVertical="true"/>
 
-            <ImageButton
-                android:id="@+id/btn_return"
-                android:layout_width="25dp"
-                android:layout_height="15dp"
-                android:background="@drawable/ret"/>
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/dialogue" />
 
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/dialogue"
-                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
 
-        </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摄像头视角调整"
+        android:textColor="@color/white"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="摄像头视角调整"
-            android:textColor="@color/white"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
 
         <View
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:background="@color/black"
+            android:background="@drawable/bg_frame"
             android:layout_marginTop="20dp"
             />
 
-        <View
+        <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/fav"
-            />
+            android:layout_below="@+id/video"/>
 
-    </LinearLayout>
-
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/car1"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="30dp"
-        android:layout_above="@+id/layout_below"/>
-
-
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/car1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/layout_below"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000"
-        android:layout_below="@id/layout_above"
-        android:padding="15dp"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="摄像头调整"
-            android:textSize="30dp"
+            android:textSize="22dp"
             android:textColor="@color/white"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="通过下方来控制摄像头的位置，实现小车的远程环境观测。"
-            android:textSize="15dp"
             android:textColor="@color/white"/>
 
         <RelativeLayout
@@ -153,4 +143,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
