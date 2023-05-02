@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.SettingFragment">
+    tools:context=".ui.RemoteControlFragment">
 
-    <include layout="@layout/fragment_data_manage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <include layout="@layout/activity_shexiang"/>
 
 </FrameLayout>

@@ -118,5 +118,4 @@ class RotateSelector: ConstraintLayout {
     }
 
 
-
 }
