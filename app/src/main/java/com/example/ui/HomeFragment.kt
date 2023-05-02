@@ -5,20 +5,25 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import androidx.recyclerview.widget.RecyclerView
 
 import androidx.viewpager2.widget.ViewPager2
 import com.example.R
 import com.example.View.CustomPageTransformer
 import com.example.View.RotateSelector
+import com.example.ViewModel.BlueViewModel
 
 class HomeFragment(): Fragment() {
 
     private lateinit var viewPager: ViewPager2
     private var isFirst = true
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        //viewModel = ViewModelProvider(requireActivity()).get(BlueViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -61,4 +66,6 @@ class HomeFragment(): Fragment() {
             }
         })
     }
+
+
 }

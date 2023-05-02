@@ -27,5 +27,5 @@
         android:id="@+id/navigation_remote_control"
         android:name="com.example.ui.RemoteControlFragment"
         android:label="@string/title_remote_control"
-        tools:layout="@layout/fragment_remote_control" />
+        tools:layout="@layout/fragment_remote_control_car" />
 </navigation>

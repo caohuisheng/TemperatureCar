@@ -79,7 +79,7 @@ class RotateSelector: ConstraintLayout {
         }
 
         view1Action.addListener(object:AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator?) {
+            override fun onAnimationEnd(animation: Animator) {
                 super.onAnimationEnd(animation)
                 if (onSurface) {
                     view1.visibility = GONE
@@ -92,7 +92,7 @@ class RotateSelector: ConstraintLayout {
                 }
             }
 
-            override fun onAnimationStart(animation: Animator?) {
+            override fun onAnimationStart(animation: Animator) {
                 super.onAnimationStart(animation)
                 if (!onSurface) {
 

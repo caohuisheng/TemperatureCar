@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatImageButton
+import androidx.lifecycle.ViewModelProvider
 import com.example.R
+import com.example.View.CustomTouchEvent
+import com.example.ViewModel.BlueViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,7 @@ class RemoteControlFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+    private lateinit var viewModel: BlueViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,7 @@ class RemoteControlFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        viewModel = ViewModelProvider(requireActivity()).get(BlueViewModel::class.java)
     }
 
     override fun onCreateView(
@@ -35,7 +41,9 @@ class RemoteControlFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_remote_control, container, false)
+        val v = inflater.inflate(R.layout.fragment_remote_control_car, container, false)
+        initView(v)
+        return v
     }
 
     companion object {
@@ -56,5 +64,15 @@ class RemoteControlFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    private fun initView(v : View) {
+        val up = v.findViewById<AppCompatImageButton>(R.id.remote_up);
+        var customTouchEvent = CustomTouchEvent()
+        customTouchEvent.apply {
+            pressAction = {viewModel.sendMessage("F")}
+            endAction = {viewModel.sendMessage("S")}
+        }
+        up.setOnTouchListener(customTouchEvent)
     }
 }
