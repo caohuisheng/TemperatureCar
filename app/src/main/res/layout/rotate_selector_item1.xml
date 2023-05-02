@@ -39,7 +39,9 @@
         android:layout_weight="1"
         app:name="报警温度阈值"
         app:nameColor="@color/gray"
-        app:valueColor="@color/white"/>
+        app:valueColor="@color/white"
+        app:maxValue="42"
+        app:minVlaue="35"/>
 
     <com.example.View.SeekBarSelector
         android:id="@+id/seekBarSelector3"
