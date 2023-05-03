@@ -6,6 +6,7 @@
         <attr name="nameColor" format="color"/>
         <attr name="maxValue" format="integer"/>
         <attr name="minVlaue" format="integer"/>
+        <attr name="type" format="string"/>
     </declare-styleable>
 
     <declare-styleable name="RotateSelector">

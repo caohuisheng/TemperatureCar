@@ -16,29 +16,52 @@
         app:valueColor="@color/white"/>
 
     <com.example.View.SeekBarSelector
-        android:id="@+id/seekBarSelector1"
+        android:id="@+id/item2_seekBarSelector1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        app:name="摄像头旋转速度"
+        app:name="旋转角度范围"
         app:nameColor="@color/gray"
         app:valueColor="@color/white"
         />
 
     <com.example.View.SeekBarSelector
-        android:id="@+id/seekBarSelector2"
+        android:id="@+id/item2_seekBarSelector2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        app:nameColor="@color/gray"
+        app:name = "旋转速度"
+        app:type="Int"
+        android:max = "20"
+        app:valueColor="@color/white"/>
+
+    <com.example.View.SeekBarSelector
+        android:id="@+id/item2_seekBarSelector3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:name = "曝光值"
         app:nameColor="@color/gray"
         app:valueColor="@color/white"/>
 
     <com.example.View.SeekBarSelector
-        android:id="@+id/seekBarSelector3"
+        android:id="@+id/item2_seekBarSelector4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         app:nameColor="@color/gray"
+        app:name="对比度"
         app:valueColor="@color/white"/>
+
+    <com.example.View.SeekBarSelector
+        android:id="@+id/item2_seekBarSelector5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:nameColor="@color/gray"
+        app:name="色彩饱和度"
+        app:valueColor="@color/white"/>
+
 
 </LinearLayout>
