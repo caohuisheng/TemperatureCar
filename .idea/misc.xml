@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/drawable/bg_frame.xml" value="0.1375" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/drawable/detail_background.xml" value="0.1375" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/activity_guide.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/activity_personal_data.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/activity_register.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/activity_shexiang.xml" value="0.176" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_data_manage.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_env_data.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_mine.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_remote_control.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_remote_control2.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_remote_control_car.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_setting.xml" value="0.12335359675785208" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/fragment_temp_data.xml" value="0.2" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/item_env_data.xml" value="0.25364583333333335" />
+        <entry key="..\:/MUXI/Project/miniProject/TemperatureCar/app/src/main/res/layout/item_temp_data.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/qyh/Desktop/TemperatureCar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1595" />
         <entry key="..\:/Users/qyh/Desktop/TemperatureCar/app/src/main/res/drawable/bg_button1.xml" value="0.1595" />
         <entry key="..\:/Users/qyh/Desktop/TemperatureCar/app/src/main/res/drawable/bg_frame.xml" value="0.1595" />
