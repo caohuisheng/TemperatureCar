@@ -35,10 +35,20 @@ class SeekBarSelector:FrameLayout {
         name = view?.findViewById(R.id.seekBar_text) ?: TextView(context)
         seekBar = view?.findViewById(R.id.seekBar_scroll) ?: SeekBar(context)
         value = view?.findViewById(R.id.seekBar_value) ?: TextView(context)
+        val a = context.obtainStyledAttributes(attributeSet,R.styleable.SeekBarSelector)
+        val name = a.getString(R.styleable.SeekBarSelector_name)
+        this.name.text = name
+        val color = a.getColor(R.styleable.SeekBarSelector_valueColor,Color.BLACK)
+        this.value.setTextColor(color)
+        val tc = a.getColor(R.styleable.SeekBarSelector_nameColor,Color.WHITE)
+        this.name.setTextColor(tc)
+        val maxValue = a.getInt(R.styleable.SeekBarSelector_maxValue,100)
+        val minValue = a.getInt(R.styleable.SeekBarSelector_minVlaue,0)
+        value.text = ((maxValue + minValue) / 2 ).toString()
         seekBar.setOnSeekBarChangeListener(object:SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (seekBar != null) {
-                    value.text = seekBar.progress.toString()
+                    value.text = String.format("%.2f",(minValue + progress * (maxValue - minValue) * 0.01f))
                 }
             }
 
@@ -50,13 +60,7 @@ class SeekBarSelector:FrameLayout {
 
             }
         })
-        val a = context.obtainStyledAttributes(attributeSet,R.styleable.SeekBarSelector)
-        val name = a.getString(R.styleable.SeekBarSelector_name)
-        this.name.text = name
-        val color = a.getColor(R.styleable.SeekBarSelector_valueColor,Color.BLACK)
-        this.value.setTextColor(color)
-        val tc = a.getColor(R.styleable.SeekBarSelector_nameColor,Color.WHITE)
-        this.name.setTextColor(tc)
+
         a.recycle()
     }
 }

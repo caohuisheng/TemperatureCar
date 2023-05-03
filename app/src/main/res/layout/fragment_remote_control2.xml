@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.RemoteControlFragment">
 
-
+    <include layout="@layout/activity_shexiang"/>
 
 </FrameLayout>

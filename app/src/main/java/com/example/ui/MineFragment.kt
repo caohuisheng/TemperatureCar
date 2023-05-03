@@ -128,6 +128,7 @@ class MineFragment() : Fragment() {
 
         //中间半透明白色圆的半径    设置成0时就是隐藏
         pieChart.setTransparentCircleRadius(0f);
+        //pieChart.setHoleColor()
     }
 
 }
