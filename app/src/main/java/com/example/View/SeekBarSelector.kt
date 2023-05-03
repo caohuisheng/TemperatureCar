@@ -45,10 +45,18 @@ class SeekBarSelector:FrameLayout {
         val maxValue = a.getInt(R.styleable.SeekBarSelector_maxValue,100)
         val minValue = a.getInt(R.styleable.SeekBarSelector_minVlaue,0)
         value.text = ((maxValue + minValue) / 2 ).toString()
+        val type = a.getString(R.styleable.SeekBarSelector_type)
+        var flag = false
+        if (type == "Int") flag = true
         seekBar.setOnSeekBarChangeListener(object:SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (seekBar != null) {
-                    value.text = String.format("%.2f",(minValue + progress * (maxValue - minValue) * 0.01f))
+                    if (flag) {
+                        value.text = progress.toString()
+                    } else {
+                        value.text = String.format("%.2f",
+                            (minValue + progress * (maxValue - minValue) * 0.01f))
+                    }
                 }
             }
 
