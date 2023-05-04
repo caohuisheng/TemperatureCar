@@ -1,7 +1,16 @@
 package com.example
 
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.entity.Temp
+import com.example.ui.Adapter.TempAdapter
+import java.util.*
+import kotlin.collections.ArrayList
 
 /*List<String> xDataList = new ArrayList<>();// x轴数据源
 List<Entry> yDataList = new ArrayList<>();// y轴数据数据源
@@ -21,14 +30,19 @@ class MainActivity : StatusBar() {
     private lateinit var btn_control_car:ImageButton;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        cancelTitle()
-        setContentView(R.layout.activity_shexiang)
-        btn_control_car = findViewById(R.id.btn_control_car)
-
-        btn_control_car.setOnClickListener {
-            //var intent = Intent(this,PersonalDataActivity)
-            //startActivity(intent)
+        //cancelTitle()
+        setContentView(R.layout.activity_main)
+        val lv:RecyclerView = findViewById(R.id.lv_main) as RecyclerView;
+        val btn_update:Button = findViewById(R.id.btn_update)
+        val tempList = ArrayList<Temp>()
+        for(i in 1..10){
+            tempList.add(Temp("name"+i,true,18,36f, Date(System.currentTimeMillis())))
         }
+
+        val layoutManager = LinearLayoutManager(this)
+        lv.layoutManager = layoutManager
+        Log.e("TAG","size"+tempList.size)
+        lv.adapter = TempAdapter(this,tempList)
     }
 }
 
