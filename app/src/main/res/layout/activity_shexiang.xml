@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_top">
+    android:background="@drawable/detail_background">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -44,14 +44,15 @@
             />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:background="@drawable/fav"
-            android:layout_below="@+id/video"/>
+            android:layout_below="@id/video"
+            />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:background="@drawable/car1"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"/>
@@ -61,7 +62,9 @@
         android:id="@+id/layout_below"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/bg_frame"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="match_parent"

@@ -62,7 +62,7 @@ class MineFragment() : Fragment() {
         var legend = lineChart.getLegend();
         legend.setEnabled(false);    //是否显示图例
 
-        dataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER);
+        dataSet.setMode(LineDataSet.Mode.CUBIC_BEZIER); //绘制曲线
 
         //是否画折线点上的空心圆  false表示直接画成实心圆
         dataSet.setDrawCircleHole(false);
@@ -126,6 +126,7 @@ class MineFragment() : Fragment() {
             dataSet.setColors(color1,color2,color3)
         }
 
+        //中间半透明白色圆的半径    设置成0时就是隐藏
         pieChart.setTransparentCircleRadius(0f);
         //pieChart.setHoleColor()
     }
