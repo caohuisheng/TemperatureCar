@@ -27,9 +27,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         app:name="小车速度"
+        android:max = "4"
         android:gravity="center"
         app:valueColor="@color/white"
         app:nameColor="@color/gray"
+        app:type="Int"
+        app:maxValue="4"
+        app.minValue="1"
          />
 
     <com.example.View.SeekBarSelector

@@ -52,7 +52,8 @@ class SeekBarSelector:FrameLayout {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (seekBar != null) {
                     if (flag) {
-                        value.text = progress.toString()
+                        value.text = String.format("%d",
+                            (minValue + progress * (maxValue - minValue) / 100))
                     } else {
                         value.text = String.format("%.2f",
                             (minValue + progress * (maxValue - minValue) * 0.01f))

@@ -38,8 +38,8 @@ class HomeFragment(): Fragment() {
 
     private fun initView(view: View) {
         val list = ArrayList<Fragment>()
-        list.add(PageFragment.newInstance(R.mipmap.car))
-        list.add(PageFragment.newInstance(R.mipmap.monitor))
+        list.add(PageFragment.newInstance(R.mipmap.car_card))
+        list.add(PageFragment.newInstance(R.mipmap.monitor_card))
         viewPager = view.findViewById(R.id.home_viewPager)
         val bannerAdapter = BannerAdapter(list, requireActivity())
         viewPager.adapter = bannerAdapter

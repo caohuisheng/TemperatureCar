@@ -1,11 +1,14 @@
 package com.example.ui
 
 import android.annotation.SuppressLint
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.lifecycle.ViewModelProvider
 import com.example.R
@@ -69,12 +72,21 @@ class RemoteControlFragment_Car : Fragment() {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initView(v : View) {
-        val up = v.findViewById<AppCompatImageButton>(R.id.remote_up);
+        val up = v.findViewById<AppCompatImageButton>(R.id.remote_up)
         val customTouchEvent = CustomTouchEvent()
         customTouchEvent.apply {
             pressAction = {viewModel.sendMessage("F")}
             endAction = {viewModel.sendMessage("S")}
         }
-        up.setOnTouchListener(customTouchEvent)
+        //up.setOnTouchListener(customTouchEvent)
+        val videoView = v.findViewById<VideoView>(R.id.remote_videoView)
+        videoView.setMediaController(MediaController(requireContext()))
+        videoView.setOnClickListener{view ->
+            run {
+                //val uri = "android.resource://" + requireActivity().packageName + "/" + R.raw.hoshi;  //本地
+                //videoView.setVideoURI(Uri.parse(uri));  //本
+                videoView.start()
+            }
+        }
     }
 }
